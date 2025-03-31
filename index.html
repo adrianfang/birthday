@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Party - Birthday Celebration</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('./stealingthis.png') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .header {
+            background: rgba(178, 34, 34, 0.9);
+            padding: 30px;
+            font-size: 2.5em;
+            font-weight: bold;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .container {
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 15px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .menu-item {
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+            width: 220px;
+            color: #000;
+            transform: scale(0.9);
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-item:hover {
+            transform: scale(1);
+        }
+        .footer {
+            background: rgba(178, 34, 34, 0.9);
+            padding: 15px;
+            font-size: 1.2em;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .cta {
+            font-size: 1.5em;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
+        }
+        .lantern, .xiao-long-bao {
+            position: absolute;
+            width: 50px;
+            animation: float 3s infinite ease-in-out;
+        }
+        .lantern {
+            top: 50px;
+            left: 20px;
+            animation-duration: 4s;
+        }
+        .xiao-long-bao {
+            bottom: 10px;
+            right: 20px;
+            animation-duration: 5s;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1.2); }
+            50% { transform: scale(1.5); }
+            100% { transform: scale(1.2); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!--Thank you chatgpt for saving me some time. Wait, why are you reading this? Don't you have better things to do?-->
+    <img src="./cinna.png" style="scale: 150%" alt="Lantern" class="lantern">
+    <img src="./Baby_Cinnamon.svg" style="scale: 150%" alt="Xiao Long Bao" class="xiao-long-bao">
+    <div class="header">🚨You're Invited!🚨</div>
+    <div class="container">
+        <h2>🔥Come Celebrate My Birthday!🔥</h2>
+        <p>Please...🥺 It's free food! (Only if you were invited)</p>
+        <div class="menu">
+            <div class="menu-item" onclick="location='https:\/\/dtf.com/en/menu'"><h3>Free Food</h3><p>Eat free of financial burden! It's tasty too :) Sorry mom and dad...</p></div>
+            <div class="menu-item" onclick="location='https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXk%3D'"><h3>The Final Feast Before the Unknown</h3><p>Find unity before the treacherous IB exams!</p></div>
+            <div class="menu-item" onclick="location='https:\/\/www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygULcmljayBhc3RsZXk%3D'"><h3>Silly Activities</h3><p>Uhh, I'll figure this part out. Present opening I guess?</p></div>
+            <div class="menu-item" onclick="location='https:\/\/www.google.com/maps/place/Din+Tai+Fung/data=!4m2!3m1!1s0x0:0x951b8541c84e2c6d?sa=X&ved=1t:2428&ictx=111'"><h3>Where is it?</h3><p>Din Tai Fung (鼎泰豐)<br>1633 Broadway, New York, NY 10019</p></div>
+        </div>
+        <p class="cta">💥Hurry! It's when Chernobyl Exploded :3💥</p>
+    </div>
+    <div class="footer">If needed, click the buttons for more info.</div>
+</body>
+</html>
